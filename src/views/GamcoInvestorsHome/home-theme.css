@@ -1,0 +1,713 @@
+@font-face {
+  font-family: 'Whitman Bold OsF';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../../assets/fonts/Whitman-BoldOsF.otf') format('otf');
+}
+@font-face {
+  font-family: 'Whitman Bold LF';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Whitman Bold LF'),
+    url('../../assets/fonts/Whitman-BoldLF.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Gotham Light';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Gotham Light'),
+    url('../../assets/fonts/Gotham-Light (1).ttf');
+}
+
+.enter {
+  font-family: 'Whitman Bold LF';
+  font-weight: bold !important;
+  padding: 0 !important;
+  font-size: small;
+}
+
+.enter-tooltip {
+  height: 15px !important;
+  padding: 0 !important;
+  opacity: 1 !important;
+  /* background-color: #005b97 !important; */
+}
+
+img.resize {
+  height: auto;
+  object-fit: none;
+}
+img.resize2 {
+  width: 62.5%;
+  height: auto;
+  padding-bottom: 5px;
+}
+
+.logo-div {
+  height: auto;
+  width: 30vw;
+  float: left;
+}
+
+div.logo-tri {
+  background-image: url('https://s3.us-east-2.amazonaws.com/gab-images/gamco_tri_white.png');
+  background-size: contain;
+  overflow: visible;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-left: 8%;
+  margin-top: -20px;
+  height: 240%;
+  width: 280%;
+  opacity: 0;
+  z-index: 100;
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+  transition: opacity 2s ease-in;
+}
+
+.logo-tri.load {
+    opacity: 1;
+}
+
+
+#gi-intro{
+  background-image: url('https://s3.us-east-2.amazonaws.com/gab-images/world-triangle.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 1100px;
+
+  margin: 0px auto;
+  /* opacity: 0.7; */
+}
+
+#gi-intro2{
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 1100px;
+  margin: 0px auto;
+  /* opacity: 0.7; */
+}
+
+#encapsule {
+  position: static !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.brightness {
+    -webkit-filter: brightness(.5);
+    filter: brightness(.5);
+}
+
+.blur {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+@media (min-width: 767px) {
+  .mobile-only {
+    visibility: hidden;
+    height: 0;
+  }
+  .mobile-box {
+    visibility: hidden;
+  }
+  .gi-intro-mobile {
+    visibility: hidden;
+    height: 0;
+  }
+  .box {
+    visibility: visible;
+    overflow: visible;
+    width: 4.7619% !important;
+    height: 7% !important;
+    margin: 0 !important;
+    padding-bottom: 5% !important;
+    float: left;
+    position: relative !important;
+    border-width: 1px;
+    border-color: #00aeef;
+    border-style: solid;
+    background-color: #00aeef;
+    transition: opacity .4s;
+  }
+
+  .box:hover {
+    opacity: 0.3;
+    transition: opacity 0s;
+  }
+  .box.load {
+    opacity: 0.3;
+    transition: opacity 2s;
+  }
+
+  .intro-video {
+    margin-top: 150px !important;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+  }
+
+  .client-divs {
+    /* width: 25vw; */
+  }
+
+  .buttonStyle {
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    padding: 10px;
+    color: #fff;
+    float: left;
+    display: table-cell;
+    width: 44%;
+    height: 180px;
+    border-radius: 1px !important;
+    margin-top: 10px;
+    margin: 3%;
+    word-wrap: normal !important;
+    font-size: 18px;
+  }
+  .panel {
+    min-height: 350px;
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  div.mobile-logo-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  div.logo-tri-mobile {
+    background-image: url('https://s3.us-east-2.amazonaws.com/gab-images/gamco_tri_white.svg');
+    /* background-size: cover; */
+    overflow: visible;
+    background-repeat: no-repeat;
+    position: absolute;
+    align-self: bottom;
+    /* text-align: center; */
+    /* margin-left: 32%; */
+    margin-top: 10%;
+    height: 20vh;
+    width: 100px;
+    opacity: 1;
+    z-index: 100;
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+  }
+
+  .logo-tri.load {
+      opacity: 1;
+  }
+
+  #gi-intro-mobile {
+    background-image: url('https://s3.us-east-2.amazonaws.com/gab-images/world-triangle.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0px auto;
+    opacity: 0.7;
+
+  }
+  .mobile-only {
+    visibility: visible;
+    background-color: rgba(0,0,0,0.7);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    text-align: center !important;
+  }
+  span.mobile-gab-text {
+    visibility: visible;
+    color: #00aeef;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 40%;
+    font-family: 'Whitman Bold LF';
+    font-size: 50px;
+    opacity: 0;
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+    /* border-top: 1px solid #005b97; */
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px !important;
+  }
+  span.mg,
+  span.ma,
+  span.mb,
+  span.me,
+  span.ml1,
+  span.ml2,
+  span.mi {
+    opacity: 0;
+  }
+  .mg.load,
+  .ma.load,
+  .mb.load,
+  .me.load,
+  .ml1.load,
+  .ml2.load,
+  .mi.load {
+    opacity: 1;
+  }
+
+  span.mobile-enter-text {
+    visibility: visible;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    font-family: 'Whitman Bold LF';
+    /* align-self: center; */
+  }
+
+  .mobile-box {
+    visibility: visible;
+  }
+
+  .box {
+    visibility: hidden;
+  }
+
+  .intro-video {
+    margin-top: 80px !important;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    margin-bottom: 140px;
+  }
+
+  .fullscreen-bg {
+      background: url('https://s3.us-east-2.amazonaws.com/gab-images/world-triangle.jpg') center center / cover no-repeat;
+  }
+
+  .buttonStyle {
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    padding: 10px;
+    color: #fff;
+    float: left;
+    display: table-cell;
+    width: 44%;
+    height: 160px;
+    border-radius: 1px !important;
+    margin-top: 10px;
+    margin: 3%;
+    word-wrap: normal !important;
+    font-size: 18px;
+  }
+  .gi-intro {
+    min-height: 1600px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+    .mobile-only.box {
+      visibility: visible;
+    }
+
+    .panel {
+      max-height: 350px;
+      min-height: 350px;
+    }
+    .buttonStyle {
+      background-color: rgba(0,0,0,0.5);
+      border: none;
+      padding: 10px;
+      color: #fff;
+      float: left;
+      display: table-cell;
+      width: 44%;
+      height: 190px;
+      border-radius: 1px !important;
+      margin-top: 10px;
+      margin: 3%;
+      word-wrap: normal !important;
+      font-size: 18px;
+    }
+}
+
+.main-container {
+  background: rgba(0, 91, 151, 1);
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+
+#enter {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 100;
+}
+
+/* @font-face {
+  font-family: 'Whitman Bold LF';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../../assets/fonts/Whitman-BoldLF.otf') format('otf');
+} */
+
+
+/* @font-face {
+  font-family: 'Gotham Light Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../../assets/fonts/Gotham_Light_Regular.otf') format('otf');
+} */
+
+/* @font-face {
+  font-family: 'Gotham Light';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Gotham Light'),
+    url('../../assets/fonts/Gotham-Light (1).ttf');
+} */
+
+
+/* @font-face {
+  font-family: 'Gotham Light 2';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Gotham Light 2'),
+    url("//db.onlinewebfonts.com/t/fc74760c72164d5321ac886797ce62eb.ttf") format('truetype');
+} */
+
+
+
+
+
+
+
+
+/* @font-face {
+  font-family: 'Raleway Light';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Raleway Light'),
+    url('../../assets/fonts/Raleway Light.ttf') format('truetype');
+} */
+
+
+/* @font-face {
+  font-family: 'Raleway Bold';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Raleway Bold'),
+    url('../../assets/fonts/Raleway Bold.ttf') format('truetype');
+} */
+
+
+.title-text {
+  font-family: 'Raleway Medium';
+  font-size: 3.5em;
+  background-color: black;
+}
+
+.thin {
+  font-weight: 100 !important;
+}
+
+.gi-title {
+  padding-top: 2%;
+  margin-left: 0 !important;
+  width: 100%;
+
+}
+.tagline-div {
+  display: flex;
+  justify-content: center;
+}
+.v-align-transform {
+  transform: translate3d(0, -50%, 0);
+  -webkit-transform: translate3d(0, -50%, 0);
+  top: 50%;
+  z-index: 2;
+}
+
+.image-bg h1,
+.image-bg h2,
+.image-bg h3,
+.image-bg h4,
+.image-bg h5,
+.image-bg h6 {
+  color: #ffffff;
+}
+.image-bg p,
+.image-bg span,
+.image-bg li {
+  color: #005b97;
+}
+
+.background-image-holder {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #292929;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.background-multiply .background-image-holder {
+  /* background-color: #3b3be8 !important; */
+  background-blend-mode: multiply;
+}
+.background-image-holder.fadeIn {
+  opacity: 1;
+}
+.parallax > .background-image-holder,
+.parallax .slides li > .background-image-holder {
+  height: 100vh;
+  top: -50vh;
+  transition: all 0s ease !important;
+  transition: opacity 0.3s ease !important;
+  -webkit-transform-style: preserve-3d;
+}
+.parallax:first-child .slides li > .background-image-holder,
+.parallax:first-child .background-image-holder {
+  top: 0;
+}
+.main-container > a:first-child + .parallax .background-image-holder {
+  top: 0;
+}
+@media all and (max-width: 767px) {
+  .parallax > .background-image-holder,
+  .parallax .slides li > .background-image-holder {
+    top: 0 !important;
+    transform: none !important;
+    -webkit-transform: none !important;
+  }
+}
+
+.funds-description {
+  text-align: center;
+  background-color: #000;
+  opacity: 0.9;
+  color: #fff;
+  height: 50px;
+  border-radius: 1px;
+  z-index: 100;
+  position: absolute;
+  margin-top: -50px;
+  right: 0;
+}
+
+.gamco-description {
+  text-align: center;
+  background-color: #fff;
+  height: 45px;
+  border-radius: 1px;
+  position: absolute;
+  left: auto;
+  right: auto;
+}
+
+.inv-type-funds {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  min-height: 350px;
+  max-height: 350px;
+}
+.inv-type-gamcoam {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  min-height: 350px;
+  max-height: 350px;
+}
+.pt5 {
+  padding-top: 5%;
+}
+.mt5 {
+  margin-top: 5%;
+}
+.ml5 {
+  margin-left: 2%;
+}
+.mr5 {
+  margin-right: 2%;
+}
+.ml4 {
+  margin-left: 4.1666666%
+}
+
+.col-border {
+  border: 1px solid #000;
+}
+.panel {
+  background-color: rgba(0, 91, 151, 0.8);
+  border: none;
+  text-align: center;
+  border-radius: 2px !important;
+
+}
+.panel.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel-header1 {
+  background-color: rgba(109, 207, 246, 0.8) !important;
+}
+.panel-header2 {
+  background-color: rgba(0, 91, 151, 0.8) !important;
+}
+.panel-title {
+  color: #fff;
+}
+.raleway-med {
+  font-family: 'Raleway Medium';
+}
+.funds-intro {
+  color: #fff;
+  font-family: 'Raleway Medium';
+  background-color: rgba(109, 207, 246, 0.8);
+}
+.gamcoam-intro {
+  color: #fff;
+  font-family: 'Raleway Medium';
+}
+.buttonStyle:hover {
+  background-color: #fff;
+  color: #005b97;
+
+}
+.buttonTag {
+  display: table-cell;
+  vertical-align: bottom;
+  font-size: 11px;
+  padding-top: 10px;
+}
+.buttonLabel {
+  margin-bottom: 20px;
+  /* text-decoration: underline; */
+}
+.under {
+  z-index: 5;
+}
+
+div.intro-a1 {
+  font-family: 'Gotham Light';
+  /* color: #BFEFFF; */
+  color: #FFF;
+  position: absolute;
+  height:100%; /* = 100% - 2*10% padding */
+  width:100%; /* = 100% - 2*5% padding */
+  padding: 10% 5%;
+  font-size: 2.2vw;
+  -webkit-animation: fadeOut 6s forwards;
+  animation: fadeOut 6s forwards;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+
+}
+
+.funds-text {
+  font-size: 2.3vw !important;
+}
+
+div.intro-g2,
+div.intro-a2,
+div.intro-b2,
+div.intro-e3,
+div.intro-l2,
+div.intro-l3,
+div.intro-i3 {
+  font-family: 'Whitman Bold LF', serif;
+  position: absolute;
+  height:80%; /* = 100% - 2*10% padding */
+  width:90%; /* = 100% - 2*5% padding */
+  opacity: 0;
+  color: #FFF;
+  font-size: 3.7vw;
+  text-align: center;
+  bottom: 0;
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+  transition: opacity 2s ease-in;
+}
+
+.intro-g2.load,
+.intro-a2.load,
+.intro-b2.load,
+.intro-e3.load,
+.intro-l2.load,
+.intro-l3.load,
+.intro-i3.load {
+    opacity: 1;
+}
+
+.intro-i2,
+.intro-n2,
+.intro-v2,
+.intro-e2,
+.intro-s2,
+.intro-t2,
+.intro-o22,
+.intro-r2,
+.intro-s22 {
+  font-family: 'Whitman Bold OsF', serif;
+  font-weight: 100;
+  position: absolute;
+  height:80%; /* = 100% - 2*10% padding */
+  width:90%; /* = 100% - 2*5% padding */
+  opacity: 0;
+  color: #FFF;
+  font-size: 2vw;
+  text-align: center;
+  bottom: 0;
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+  transition: opacity 2s ease-in;
+}
+
+.intro-i2.load,
+.intro-n2.load,
+.intro-v2.load,
+.intro-e2.load,
+.intro-s2.load,
+.intro-t2.load,
+.intro-o22.load,
+.intro-r2.load,
+.intro-s22.load {
+    opacity: 1;
+}
+
+@-webkit-keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}

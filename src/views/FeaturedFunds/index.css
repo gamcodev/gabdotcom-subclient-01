@@ -1,0 +1,219 @@
+#ff-card-wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+@media only screen and (min-width: 865px) {
+  #ff-card-wrapper {
+    border-spacing: 15px;
+    font-family: 'Gotham Light';
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #00aeef
+  }
+
+  .ff-card {
+    padding: 2%;
+    width: 33.33%;
+    display: table-cell;
+    border-radius: 0px;
+    vertical-align: top;
+    position: relative;
+  }
+
+  .fund-title {
+    font-family: 'Gotham Light';
+    letter-spacing: -1px;
+    font-size: 165%;
+    /* float: left; */
+    width: 100%;
+    color: #005b97
+  }
+
+  .ticker-sym {
+    font-family: 'Gotham Light';
+    letter-spacing: 0.4px;
+    /* color: #59616c; */
+    color: #3c3c3c;
+    font-size: 150%;
+    display: block;
+  }
+
+  .fund-type {
+    font-family: 'Gotham Light';
+    letter-spacing: -0.9px;
+    color: #59616c;
+    font-size: 120%;
+  }
+
+  .fund-data {
+    font-family: 'Gotham Light';
+    float: left;
+    width: 100%;
+    padding-bottom: 5px;
+  }
+
+  .price-info {
+    font-family: 'Gotham Light';
+    letter-spacing: 0.4px;
+  }
+
+  .price-without {
+    font-size: 100%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  .price-date {
+    font-size: 14px;
+    /* color: #59616c; */
+    color: #3c3c3c;
+  }
+
+  .price-span {
+    font-size: 170%;
+    letter-spacing: 0.75px;
+    padding-right: 10px;
+    color: #000;
+  }
+
+  .ytd-span {
+    font-size: 170%;
+    letter-spacing: 0.75px;
+    color: #00aeef
+  }
+
+  .objective {
+    color: #000;
+    font-size: 100%;
+    font-family: 'Gotham Light';
+    letter-spacing: 0.3px;
+  }
+
+  .card-links {
+    width: 100%;
+  }
+
+  .card-link a {
+    font-family: 'Gotham Light';
+    letter-spacing: 0.4px;
+    color: #3c3c3c;
+    width: 50%;
+    margin-right: 30px;
+    text-align: center;
+  }
+
+  .card-link a:hover {
+    font-family: 'Gotham Light';
+    letter-spacing: 0.4px;
+    color: #00aeef;
+  }
+}
+
+@media only screen and (max-width: 865px) {
+  #ff-card-wrapper {
+    display: block;
+    border-spacing: 15px;
+    font-family: 'Gotham Light';
+    margin-top: 7.5%;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #00aeef
+  }
+
+  .ff-card {
+    padding: 15px;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 80%;
+    display: block;
+    margin-bottom: 15px;;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fund-title {
+    font-family: 'Gotham Light';
+    letter-spacing: 0.4px;
+    font-size: 165%;
+    /* float: left; */
+    width: 100%;
+    color: #005b97
+  }
+
+  .ticker-sym {
+    /* color: #59616c; */
+    color: #3c3c3c;
+    font-size: 16px;
+    display: block;
+  }
+
+  .fund-type {
+    color: #59616c;
+    font-size: 16px;
+  }
+
+  .fund-data {
+    font-family: 'Gotham Light';
+    float: left;
+    width: 100%;
+    padding-bottom: 5px;
+  }
+
+  .price-info {
+    font-family: 'Gotham Light';
+    letter-spacing: 0.4px;
+  }
+
+  .price-without {
+    font-size: 90%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  .price-date {
+    font-size: 11px;
+    /* color: #59616c; */
+    color: #3c3c3c;
+  }
+
+  .price-span {
+    font-size: 170%;
+    letter-spacing: 0.75px;
+    padding-right: 10px;
+    color: #3c3c3c;
+  }
+
+  .ytd-span {
+    font-size: 170%;
+    color: #00aeef
+  }
+
+  .objective {
+    font-size: 11px;
+  }
+
+  .card-links {
+    width: 100%;
+  }
+
+  .card-link a {
+    font-family: 'Gotham Light';
+    letter-spacing: 0.4px;
+    color: #3c3c3c;
+    width: 50%;
+    margin-right: 30px;
+    text-align: center;
+  }
+
+  .card-link a:hover {
+    color: #00aeef
+  }
+}

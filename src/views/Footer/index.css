@@ -1,0 +1,134 @@
+div#main-footer {
+  width: 100%;
+  height: auto;
+  background-color: #6dcff6;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  /* margin-top: 50px; */
+}
+
+.body-sub-nav-funds {
+  background-color: #6dcff6;
+  width: 100%;
+  padding-left: 2%;
+  overflow: hidden;
+}
+
+.footer-table-funds {
+  color: white;
+  background-color: #005b97;
+  font-size: 100%;
+  display: block;
+  padding: 2%;
+  margin-left: 0;
+}
+
+.first-column {
+  display: inline-block;
+  width: 25%;
+  font-family: 'Archivo';
+  font-size: 80%;
+  vertical-align: top;
+}
+
+.bottom-links-funds {
+  width: 100%;
+  font-family: 'Archivo';
+  font-size: 90%;
+  color: lightgrey;
+  white-space: pre-line;
+  text-align: left;
+}
+
+@media only screen and (max-width: 700px) {
+  .bottom-links-funds {
+    text-align: center;
+  }
+}
+
+.social-media-links {
+  margin-top: 25px;
+  padding-bottom: 5%;
+  column-count: 5;
+}
+
+.footer-section {
+  display: inline-block;
+  width: 20%;
+  margin-left: 5%;
+  vertical-align: top;
+}
+
+.footer-section div {
+  height: auto;
+}
+
+/* .footer-header {
+  font-family: 'Gotham Light';
+  position: relative;
+  font-size: 85%;
+  padding-bottom: 20px;
+  margin-bottom: 3%;
+  text-transform: uppercase;
+  display: inline-block;
+} */
+
+.footer-header:after {
+  content: '';
+  width: 50%;
+  left: 0%;
+  height: 2px;
+  background: lightgrey;
+  position: absolute;
+  bottom: 20%;
+}
+
+.footer-item-funds {
+  margin-bottom: 7%;
+  padding-bottom: 7%;
+  color: lightgrey;
+  font-size: 80%;
+  font-family: 'Archivo';
+  border-bottom: dotted 1px lightgrey
+}
+
+div#blue-logo-bottom {
+  text-align: center;
+  background-color: #005b97;
+  height: 320px;
+}
+
+div#blue-logo-bottom img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  .first-column {
+    width: 100%;
+    text-align: center;
+  }
+
+  .bottom-links {
+    text-align: center;
+  }
+
+  .social-media-links {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 28%;
+  }
+
+  .footer-section div.footer-header {
+    height: auto;
+  }
+
+  .footer-section div.footer-item-funds {
+    height: auto;
+  }
+}

@@ -1,0 +1,105 @@
+/* EVENTS HOMEPAGE BANNER */
+div#events-banner {
+  color: white;
+  font-family: 'Gotham Light';
+  font-size: 25px;
+  /* font-weight: 600; */
+  background-color: #4d545e;
+  text-align: center;
+  padding: 5px 0;
+  height: 60px;
+  line-height: 50px;
+}
+
+div#events-banner a:hover {
+  color: #6dcff6;
+}
+span#events {
+  padding-right: 1.5rem;
+}
+/* END EVENTS HOMEPAGE BANNER */
+
+/* EVENTS PAGE */
+.events-page {
+  width: 90%;
+  margin: 1% 5.5% 5% 4.5%;
+  font-size: 18px;
+}
+.events-header {
+  font-family: 'Gotham Light';
+  font-size: 180%;
+  margin-top: 2%;
+  color: auto;
+}
+
+.event-card {
+  border-bottom: 1px solid #59616c;
+  text-align: left;
+  /* cursor: pointer; */
+  padding: 2rem 0;
+}
+.event-date {
+  font-weight: 600;
+  color: #00aeef;
+}
+.event-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #4d545e;
+}
+.event-desc {
+
+}
+.presenters {
+  font-weight: 600;
+  color: #4d545e;
+  text-decoration: underline;
+}
+.contact {
+  color: #005b97;
+}
+.register {
+  font-weight: 600;
+  color: #005b97;
+}
+#pad12 {
+  padding-bottom: 2rem;
+}
+.schedule {
+  display: inline-grid;
+  grid-template-columns: 12% auto;
+}
+#head {
+  font-weight: 600;
+  color: #4d545e;
+  text-decoration: underline;
+}
+#event-page {
+  width: 100%;
+
+}
+@media only screen and (min-width: 768px) {
+  #cef-page {
+    width: 70%;
+    grid-template-columns: 15% auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #cef-page {
+    width: 100%;
+    grid-template-columns: 20% auto;
+    text-align: left;
+
+  }
+}
+.time-slot {
+  padding: 0.5rem;
+  border-bottom: 0.5px solid #d3d3d3;
+
+}
+.fund-presenting {
+  padding: 0.5rem;
+  border-bottom: 0.5px solid #d3d3d3;
+
+}
+/* END EVENTS PAGE */
