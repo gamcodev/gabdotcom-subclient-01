@@ -19,7 +19,7 @@ import 'core-js/es/regexp';
 import 'core-js/es/map';
 import 'core-js/es/set';
 import 'proxy-polyfill';
-import 'react-waypoint'
+// import 'react-waypoint'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
