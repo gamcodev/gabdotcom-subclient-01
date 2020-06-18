@@ -7,7 +7,7 @@ import FundsHome from '../views/FundsHome'
 import FundsTopNav from '../views/FundsHome/FundsTopNav'
 import Footer from '../views/Footer/index'
 import Events from '../views/Events'
-
+import Robo from '../views/RoboFeature'
 
 import GamcoInvestorsHome from '../views/GamcoInvestorsHome'
 
@@ -35,6 +35,7 @@ class App extends Component {
 
             <Route path='/' exact component={ FundsHome } />
             <Route path='/events' exact component={ Events }/>
+            <Route path='/robo' exact component={ Robo }/>
 
 
           </div>

@@ -1,5 +1,6 @@
 import React, { Component, Suspense } from 'react';
 import EventsBanner from '../Events/EventsBanner'
+import RoboBanner from '../RoboFeature/RoboBanner'
 import { Spinner } from '@blueprintjs/core'
 import { connect } from 'react-redux';
 // import { fetchFundsHomeInsights } from '../../redux/modules/Insights/actions';
@@ -20,7 +21,7 @@ class FundsHome extends Component  {
           <header>
             <FundsHomeCarousel />
           </header>
-          <EventsBanner />
+          <RoboBanner />
           <main>
             <div id="home-ff-container">
               <div className='funds-home-featured-funds-header'>
