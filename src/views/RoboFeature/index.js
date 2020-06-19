@@ -3,7 +3,8 @@ import React from 'react'
 
 const Robo = () => {
 	return (
-			<div>  <html>
+			<div>  
+				  <html>
   <body>
   <div>
   <button id="startover" onclick= "startover()" href="javascript:location.reload(true)">Start Over</button>
@@ -18,7 +19,50 @@ const Robo = () => {
   <button id="oneyes" onclick="oneyes()">Yes</button>
   <button id="oneno" onclick="oneno()">No</button>
   </div>
-
+  <div id="risktolerance">
+    <h2>What is your level of risk tolerance?</h2>
+    <button id="riskone" onclick="riskone()">Low</button>
+    <button id="risktwo" onclick="risktwo()">Medium</button>
+    <button id="riskthree" onclick="riskthree()">High</button>
+  </div>
+  <div>
+    <h2 id=hreturns>What level of returns do you want?</h2>
+    <button id="returnsone" onclick="returnsone()">Low</button>
+    <button id="returnstwo" onclick="returnstwo()">Medium</button>
+    <button id="returnsthree" onclick="returnsthree()">High</button>
+  </div>
+  <h2 id="hnav">What level of NAV change are you looking for?</h2>
+  <button id="navone" onclick="navone()">Low</button>
+  <button id="navtwo" onclick="navtwo()">Medium</button>
+  <button id="navthree" onclick="navthree()">High</button>
+</div>
+<div id="showwantedreturns1">
+  <h2>Here are our low return funds:</h2>
+</div>
+<div id="showwantednav1">
+  <h2>Here are our low NAV funds:</h2>
+</div>
+<div id="showwantedrisk1">
+  <h2>Here are our low risk funds:</h2>
+</div>
+<div id="showwantedreturns2">
+  <h2>Here are our medium return funds:</h2>
+</div>
+<div id="showwantednav2">
+  <h2>Here are our medium NAV funds:</h2>
+</div>
+<div id="showwantedrisk2">
+  <h2>Here are our medium risk funds:</h2>
+</div>
+<div id="showwantedreturns3">
+  <h2>Here are our high return funds:</h2>
+</div>
+<div id="showwantednav3">
+  <h2>Here are our high NAV funds:</h2>
+</div>
+<div id="showwantedrisk3">
+  <h2>Here are our high risk funds:</h2>
+</div>
   <style>
   body {
 
@@ -256,26 +300,37 @@ const Robo = () => {
   document.getElementById("listclassi").style.display = "none";
   document.getElementById("listclassfund").style.display = "none";
   document.getElementById("listclassadv").style.display = "none";
+  document.getElementById("showwantedrisk1").style.display = "none";
+  document.getElementById("showwantedrisk2").style.display = "none";
+  document.getElementById("showwantedrisk3").style.display = "none";
+  document.getElementById("showwantednav1").style.display = "none";
+  document.getElementById("showwantednav2").style.display = "none";
+  document.getElementById("showwantednav3").style.display = "none";
+  document.getElementById("showwantedrisk1").style.display = "none";
+  document.getElementById("showwantedrisk2").style.display = "none";
+  document.getElementById("showwantedrisk3").style.display = "none";
+  document.getElementById("showwantedreturns3").style.display = "none";
+  document.getElementById("showwantedreturns2").style.display = "none";
+  document.getElementById("showwantedreturns1").style.display = "none";
 
 
+  var user = {question1: null, question2: null, question3: null, navwanted: null, resultswanted: null, returnswanted: null};
 
-
-
-
-  var question1 = 0;
-
+  var question1;
 
 
   function oneyes() {
       question1 = 6;
       document.getElementById("askesg").style.display = "block";
           document.getElementById("question1").style.display = "none";
+      return question1;
 
 
   }
   function oneno() {
       question1 = 5;
       document.getElementById("question1").style.display = "none";
+      return question1;
 
   }
 
@@ -288,7 +343,7 @@ const Robo = () => {
       document.getElementById("value").style.display = "block";
       document.getElementById("question2").style.display = "none";
       document.getElementById("listvalue").style.display = "block";
-
+      return question2;
 
 
   }
@@ -298,6 +353,7 @@ const Robo = () => {
 
       document.getElementById("returns").style.display = "block";
           document.getElementById("listgrowth").style.display = "block";
+      return question2;
 
 
   }
@@ -310,6 +366,7 @@ const Robo = () => {
       question3 = 6;
       document.getElementById("question3").style.display = "none";
       document.getElementById("relevance").style.display = "block";
+      return question3;
 
 
 
@@ -318,11 +375,11 @@ const Robo = () => {
       document.getElementById("listpet").style.display = "yes";
 
   }
-
   }
   function nopets() {
       question3 = 5;
       document.getElementById("question3").style.display = "none";
+      return question3;
 
   }
 
@@ -425,11 +482,136 @@ const Robo = () => {
        document.getElementById("listclassa").style.display = "none";
        document.getElementById("listclassfund").style.display = "block";
   }
+  var navwanted = 0;
+  var resultswanted = 0;
+  var returnswanted= 0;
+  function navone() {
+    navwanted = 1;
+  document.getElementById("showwantedrisk1").style.display = "none";
+  document.getElementById("showwantedrisk2").style.display = "none";
+  document.getElementById("showwantedrisk3").style.display = "none";
+  document.getElementById("showwantednav1").style.display = "block";
+  document.getElementById("showwantednav2").style.display = "none";
+  document.getElementById("showwantednav3").style.display = "none";
+  document.getElementById("showwantedreturns1").style.display = "none";
+  document.getElementById("showwantedreturns2").style.display = "none";
+  document.getElementById("showwantedreturns3").style.display = "none";
+  return navwanted;
+  }
 
+  function navtwo() {
+    navwanted = 2;
+  document.getElementById("showwantedrisk1").style.display = "none";
+  document.getElementById("showwantedrisk2").style.display = "none";
+  document.getElementById("showwantedrisk3").style.display = "none";
+  document.getElementById("showwantednav1").style.display = "none";
+  document.getElementById("showwantednav2").style.display = "block";
+  document.getElementById("showwantednav3").style.display = "none";
+  document.getElementById("showwantedreturns1").style.display = "none";
+  document.getElementById("showwantedreturns2").style.display = "none";
+  document.getElementById("showwantedreturns3").style.display = "none";
+    return navwanted;
 
+  }
+  function navthree() {
+    navwanted = 3;
+  document.getElementById("showwantedrisk1").style.display = "none";
+  document.getElementById("showwantedrisk2").style.display = "none";
+  document.getElementById("showwantedrisk3").style.display = "none";
+  document.getElementById("showwantednav1").style.display = "none";
+  document.getElementById("showwantednav2").style.display = "none";
+  document.getElementById("showwantednav3").style.display = "block";
+  document.getElementById("showwantedreturns1").style.display = "none";
+  document.getElementById("showwantedreturns2").style.display = "none";
+  document.getElementById("showwantedreturns3").style.display = "none";
+    return navwanted;
+
+  }
+  function riskone() {
+    riskwanted = 1;
+  document.getElementById("showwantedrisk1").style.display = "block";
+  document.getElementById("showwantedrisk2").style.display = "none";
+  document.getElementById("showwantedrisk3").style.display = "none";
+  document.getElementById("showwantednav1").style.display = "none";
+  document.getElementById("showwantednav2").style.display = "none";
+  document.getElementById("showwantednav3").style.display = "none";
+  document.getElementById("showwantedreturns1").style.display = "none";
+  document.getElementById("showwantedreturns2").style.display = "none";
+  document.getElementById("showwantedreturns3").style.display = "none";
+  return riskwanted;
+  }
+  function risktwo() {
+    riskwanted = 2;
+  document.getElementById("showwantedrisk1").style.display = "none";
+  document.getElementById("showwantedrisk2").style.display = "block";
+  document.getElementById("showwantedrisk3").style.display = "none";
+  document.getElementById("showwantednav1").style.display = "none";
+  document.getElementById("showwantednav2").style.display = "none";
+  document.getElementById("showwantednav3").style.display = "none";
+  document.getElementById("showwantedreturns1").style.display = "none";
+  document.getElementById("showwantedreturns2").style.display = "none";
+  document.getElementById("showwantedreturns3").style.display = "none";
+  return riskwanted;
+  }
+  function riskthree() {
+    riskwanted = 3;
+  document.getElementById("showwantedrisk1").style.display = "none";
+  document.getElementById("showwantedrisk2").style.display = "none";
+  document.getElementById("showwantedrisk3").style.display = "block";
+  document.getElementById("showwantednav1").style.display = "none";
+  document.getElementById("showwantednav2").style.display = "none";
+  document.getElementById("showwantednav3").style.display = "none";
+  document.getElementById("showwantedreturns1").style.display = "none";
+  document.getElementById("showwantedreturns2").style.display = "none";
+  document.getElementById("showwantedreturns3").style.display = "none";
+    return riskwanted;
+
+  }
+  function returnsone() {
+    returnswanted = 1;
+  document.getElementById("showwantedrisk1").style.display = "none";
+  document.getElementById("showwantedrisk2").style.display = "none";
+  document.getElementById("showwantedrisk3").style.display = "none";
+  document.getElementById("showwantednav1").style.display = "none";
+  document.getElementById("showwantednav2").style.display = "none";
+  document.getElementById("showwantednav3").style.display = "none";
+  document.getElementById("showwantedreturns1").style.display = "block";
+  document.getElementById("showwantedreturns2").style.display = "none";
+  document.getElementById("showwantedreturns3").style.display = "none";
+  return returnswanted;
+  }
+  function returnstwo() {
+    returnswanted = 2;
+  document.getElementById("showwantedrisk1").style.display = "none";
+  document.getElementById("showwantedrisk2").style.display = "none";
+  document.getElementById("showwantedrisk3").style.display = "none";
+  document.getElementById("showwantednav1").style.display = "none";
+  document.getElementById("showwantednav2").style.display = "none";
+  document.getElementById("showwantednav3").style.display = "none";
+  document.getElementById("showwantedreturns1").style.display = "none";
+  document.getElementById("showwantedreturns2").style.display = "block";
+  document.getElementById("showwantedreturns3").style.display = "none";
+  return returnswanted;
+  }
+  function returnsthree() {
+    returnswanted = 3;
+  document.getElementById("showwantedrisk1").style.display = "none";
+  document.getElementById("showwantedrisk2").style.display = "none";
+  document.getElementById("showwantedrisk3").style.display = "none";
+  document.getElementById("showwantednav1").style.display = "none";
+  document.getElementById("showwantednav2").style.display = "none";
+  document.getElementById("showwantednav3").style.display = "none";
+  document.getElementById("showwantedreturns1").style.display = "none";
+  document.getElementById("showwantedreturns2").style.display = "none";
+  document.getElementById("showwantedreturns3").style.display = "block";
+  return returnswanted;
+  }
   </script>
   <body>
   </html>
+
+
+
 
 
 </div>
