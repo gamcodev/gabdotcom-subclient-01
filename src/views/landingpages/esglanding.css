@@ -1,0 +1,1535 @@
+
+.w3-bar-item {
+  background-color: blue;
+  height: 2em;
+  width: 100%;
+  display: block;
+  image-align: center;
+}
+
+.img-landing {
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 10px;
+
+}
+
+
+
+.h1 {
+  color: darkblue;
+  text-align: center;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.h2 {
+  color: #00FFFF;
+  text-align: center;
+}
+
+.nav-funds-container {
+  display: grid;
+  grid-template-rows: 60% 40%;
+}
+
+/* position: relative;
+background-color: white;
+top: 0;
+width: 100%;
+margin-left: 2%; */
+
+.nav-funds {
+  /* position: relative; */
+  display: grid;
+  grid-template-columns: 20% 9.9% 9.9% 9.9% 9.9% 9.9% 9.9% 9.9%;
+  column-gap: 0.5%;
+  font-family: 'Gotham Light';
+  font-weight: 600;
+  font-size: 100%;
+  letter-spacing: 0.4px;
+  color: #363B42;
+  margin-top: 0%;
+  /* margin-bottom: 1%; */
+  text-align: center;
+  z-index: 1;
+  /* text-transform: uppercase; */
+  background-color: white;
+  overflow: hidden;
+  padding-bottom: 15px;
+  width: 100%;
+  transition: top 1s, position .3s;
+  border-bottom: 0.5px solid rgba(0,0,0,0.1);
+}
+
+.nav-funds-ie {
+  /* position: relative; */
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 0.5% 9.9% 0.5% 9.9% 0.5% 9.9% 0.5% 9.9% 0.5% 9.9% 0.5% 9.9% 0.5% 9.9%;
+  grid-template-columns: 20% 9.9% 9.9% 9.9% 9.9% 9.9% 9.9%;
+  -webkit-column-gap: 0.5%;
+          column-gap: 0.5%;
+    -ms-column-gap: 0.5%;
+  font-family: 'Gotham Light';
+  font-size: 110%;
+  letter-spacing: 0.5px;
+  color: #434547;
+  margin-top: 0%;
+  padding-top: 2%;
+  /* margin-bottom: 1%; */
+  text-align: center;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
+  padding-bottom: 15px;
+  width: 100%;
+  -webkit-transition: top 1s, position .3s;
+  -o-transition: top 1s, position .3s;
+  transition: top 1s, position .3s;
+  border-bottom: 0.5px solid rgba(0,0,0,0.1);
+  padding-top: 2%;
+}
+
+
+.nav-funds-item {
+  border-top: solid 2px;
+  margin-top: 20%;
+  padding-top: 7%;
+  z-index: 1;
+  cursor: pointer;
+  color: #4f5154;
+}
+
+.nav-funds-item:hover, .nav-funds-item:focus {
+  color: #00aeef
+}
+
+.nav-funds-item-1 {
+  -ms-grid-column: 1
+}
+
+.nav-funds-item-2 {
+  -ms-grid-column: 2;
+  border-top: none
+}
+
+.nav-funds-item-3 {
+  -ms-grid-column: 3
+}
+
+.nav-funds-item-4 {
+  -ms-grid-column: 4;
+  border-top: none
+}
+
+.nav-funds-item-5 {
+  -ms-grid-column: 5
+}
+
+.nav-funds-item-6 {
+  -ms-grid-column: 6;
+  border-top: none
+}
+
+.nav-funds-item-7 {
+  -ms-grid-column: 7
+}
+
+.nav-funds-item-8 {
+  -ms-grid-column: 8;
+  border-top: none
+}
+
+.nav-funds-item-9 {
+  -ms-grid-column: 9
+}
+
+.nav-funds-item-10 {
+  -ms-grid-column: 10;
+  border-top: none
+}
+
+.nav-funds-item-11 {
+  -ms-grid-column: 11
+}
+
+.nav-funds-item-12 {
+  -ms-grid-column: 12;
+  border-top: none
+}
+
+.nav-funds-item-13 {
+  -ms-grid-column: 13
+}
+
+.nav-funds-item-15 {
+  -ms-grid-column: 15
+}
+
+.nav-funds-item-space {
+  -ms-grid-column: 14
+}
+
+.nav-funds-item a:focus {
+  color: #00aeef;
+}
+
+
+.nav-funds-item-responsive {
+  border-bottom: 0.5px solid rgba(0,0,0,0.1);
+  color: hsl(50, 0%, 40%)
+}
+
+.nav-funds-item-responsive div {
+  font-family: 'Gotham Light';
+  letter-spacing: 0.3px;
+  display: block;
+  height: 40px;
+  padding: 0.7rem 15px;
+  color: inherit;
+  text-decoration: none
+}
+
+.nav-funds-item-responsive div:hover {
+  color: white;
+  background-color: #6dccf6;
+}
+
+.nav-funds-logo {
+  margin-left: 0%;
+  margin-top: 5%;
+  margin-bottom: 1%;
+  cursor: pointer;
+  width: 80%;
+}
+
+.nav-funds-menu {
+  display: none;
+}
+
+.funds-home-carousel-page {
+  position: relative;
+  max-height: 250px;
+  max-width: 250px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  cursor: pointer;
+
+  /* border-top: solid 1px #59616c; */
+}
+
+.funds-home-carousel-text-box {
+  background: rgba(0, 0, 0, 0.4);
+  top: 30%;
+  left: 50%;
+  position: absolute;
+  margin-top: 3%;
+  width: 580px;
+  transform: translate(-50%, -50%);
+  border-left: solid 5px #6dcff6
+}
+
+.funds-home-carousel-text-box-pet-parents {
+  background: rgba(0, 0, 0, 0.2);
+  top: 30%;
+  left: 50%;
+  position: absolute;
+  margin-top: 3%;
+  width: 590px;
+  transform: translate(-50%, -50%);
+  border-left: solid 5px #683a02
+}
+
+.funds-home-carousel-text-box-esg-green {
+  background: rgba(0, 0, 0, 0.2);
+  top: 30%;
+  left: 50%;
+  position: absolute;
+  margin-top: 3%;
+  width: 580px;
+  transform: translate(-50%, -50%);
+  border-left: solid 5px #20cc76
+}
+
+.carousel-indicators li {
+  border: 1px solid white;
+}
+
+.carousel-indicators .active {
+  background-color: white;
+}
+
+.glyphicon-chevron-left {
+    background-image: url("../../assets/images/circle-background-arrow-left.svg");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    z-index: 0
+}
+
+.glyphicon-chevron-left:before {
+  content: ''
+}
+
+.glyphicon-chevron-right {
+    background-image: url("../../assets/images/circle-background-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    z-index: 0
+}
+
+.glyphicon-chevron-right:before {
+  content: ''
+}
+
+.carousel-control {
+  opacity: 1;
+  z-index: 0
+}
+
+.carousel-control.right {
+  background-image: unset
+}
+
+.carousel-control.left {
+  background-image: unset
+}
+
+.funds-home-carousel-header {
+  padding: 7%;
+  color: white;
+  font-family: 'Gotham Light';
+  font-weight: bold;
+
+}
+
+.large-text {
+  font-size: 280%;
+  font-weight: bold;
+  padding-bottom: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  line-height: 1.1;
+  width: 100%;
+}
+
+.medium-text {
+  font-size: 130%;
+  font-style: italic;
+  padding-bottom: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  width: 100%;
+}
+
+.regular-text {
+  font-size: 90%;
+  font-style: italic;
+  padding-bottom: 0%;
+  padding-left: 3%;
+  padding-right: 3%;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+.learn-more {
+  float: right;
+  font-size: 50%;
+  font-family: 'Archivo';
+  color: lightgrey;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.learn-more-button {
+  background-color: #6dcff6;
+  border: none;
+  font-family: 'Archivo';
+  font-size: 100%;
+  padding: 8px 18px;
+  border-radius: 0%;
+}
+
+.learn-more-button-esg {
+  background-color: #20cc76;
+  border: none;
+  font-family: 'Archivo';
+  font-size: 100%;
+  padding: 8px 18px;
+  border-radius: 0%;
+}
+
+.learn-more-button-pet-parents {
+  background-color: #683a02;
+  border: none;
+  font-family: 'Archivo';
+  font-size: 100%;
+  padding: 8px 18px;
+  border-radius: 0%;
+}
+
+.funds-home-insights {
+  background-color: #f7f7fd;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 3%;
+}
+
+.funds-home-insights-header {
+  font-family: 'Gotham Light';
+  font-size: 120%;
+  letter-spacing: 0.2px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.funds-home-insights-header-tagline {
+  font-family: 'Gotham Light';
+  font-size: 180%;
+  letter-spacing: 0.4px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.funds-home-insights-header-underline {
+  height: .2rem;
+  width: 7%;
+  margin: 0;
+  background: #6dcff6;
+  border: none;
+  transition: .3s ease-in-out;
+  margin-top: 10px;
+  min-width: 55px;
+}
+
+.funds-home-insights-container {
+  position: relative;
+  width: 90%;
+  margin: 5% auto auto auto;
+}
+
+.funds-home-insight-card {
+  color: #363b42;
+  width: 32%;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin-right: 2%;
+  transition: transform .5s ease;
+}
+
+.funds-home-insight-card:hover {
+  transform: scale(1.05);
+}
+
+.funds-home-insight-card:nth-child(3){
+  margin-right: 0;
+}
+
+.funds-home-insight-image {
+  margin-bottom: 5%;
+  width: 50%;
+  height: 17.5vw;
+}
+
+
+.funds-home-insight-title {
+  font-family: 'Gotham Light';
+  font-size: 140%;
+  letter-spacing: 0.3px;
+
+}
+
+.funds-home-insight-date {
+  font-family: 'Gotham Light';
+  font-size: 95%;
+  letter-spacing: 0.3px;
+  padding-bottom: 2.5%;
+  padding-top: 2.5%;
+}
+
+@font-face {
+  font-family: 'Gotham Narrow Book';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Gotham Narrow Book'),
+    url('../../assets/fonts/GothamNarrowBook.ttf');
+}
+.funds-home-insight-description {
+  font-family: 'Gotham Light';
+  font-size: 100%;
+  letter-spacing: 0.3px;
+  height: 120px;
+}
+
+.funds-home-more-insights {
+  color: #59616c;
+  font-family: 'Gotham Light';
+  margin-left: auto;
+  margin-right: auto;
+  margin: 1% auto 0 auto;
+  width: 90%;
+  padding-bottom: 4%;
+  font-size: 16px;
+}
+
+.funds-home-more-insights:hover {
+  color: #6dcff6;
+}
+
+.funds-home-featured-funds {
+  /* background-color: #f7f7fd; */
+  padding-top: 3%;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  padding-bottom: 10%;
+}
+
+.funds-home-featured-funds-header {
+  color: #000;
+  font-family: 'Gotham Light';
+  font-size: 120%;
+  letter-spacing: 0.2px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.funds-home-featured-funds-header-tagline {
+  font-family: 'Gotham Light';
+  font-size: 180%;
+  letter-spacing: 0.4px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.funds-home-featured-funds-header-underline {
+  height: .2rem;
+  width: 7%;
+  margin: 0;
+  background: #6dcff6;
+  border: none;
+  transition: .3s ease-in-out;
+  margin-top: 10px;
+  min-width: 55px;
+}
+
+div#home-ff-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 3%;
+}
+
+@media only screen and (min-width: 1500px){
+  .funds-home-insights-header {
+    width: 1400px;
+  }
+
+  .funds-home-insights-header-tagline {
+    width: 1400px
+  }
+
+  .funds-home-insights-container {
+    width: 1400px;
+  }
+
+  .funds-home-insight-card {
+    width: 30%;
+    margin-right: 3%;
+  }
+
+  .funds-home-more-insights {
+    width: 1400px;
+  }
+
+  div#home-ff-container {
+    width: 1550px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .nav-funds-mini {
+    display: none
+  }
+
+}
+
+@media (max-width: 450px){
+  .nav-funds-mini {
+    margin-bottom: 0px;
+  }
+
+  input[type="text"].nav-funds-search-animated:focus  {
+    width: 300px
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .nav-funds-mini {
+    display: grid;
+    grid-template-columns: 10% 78% 10%;
+    column-gap: 0%;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid rgba(0,0,0,0.1);
+  }
+
+  .nav-funds-logo-mini-container {
+    text-align: center;
+  }
+
+  .nav-funds-logo-mini {
+    margin-top: 0.5%;
+    width: 153px;
+    height: 40.5px;
+  }
+
+  .nav-funds-menu-icon {
+    margin-top: 18px;
+    margin-left: 40%;
+    cursor: pointer;
+  }
+
+  .nav-funds-search-icon-container {
+    margin-top: 15px;
+  }
+
+  .nav-funds-search-icon {
+    height: 20px;
+    margin-top: 3px
+  }
+
+#wrap {
+  display: inline-block;
+  position: relative;
+  float: right;
+  padding: 0;
+  bottom: 14px;
+}
+
+input[type="text"].nav-funds-search-animated {
+  height: 55px;
+  font-size: 55px;
+  display: inline-block;
+  font-family: "Gotham Light";
+  letter-spacing: 0.4px;
+  font-weight: 100;
+  border: none;
+  outline: none;
+  color: #555;
+  padding: 3px;
+  padding-right: 60px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  z-index: 3;
+  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  cursor: pointer;
+}
+
+input[type="text"].nav-funds-search-animated:focus:hover {
+  /* border-bottom: 1px solid #BBB; */
+}
+
+input[type="text"].nav-funds-search-animated:focus {
+  width: 300px;
+  height: 50px;
+  font-size: 12px;
+  z-index: 1;
+  /* border-bottom: 1px solid #BBB; */
+  background-color: white;
+  cursor: text;
+}
+
+input[type="submit"].nav-funds-search-animated {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  float: right;
+  background: url('https://s3.us-east-2.amazonaws.com/gab-images/search2.svg') center center no-repeat;
+  background-size: 27px;
+  text-indent: -10000px;
+  border: none;
+  position: absolute;
+  top: -3px;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity .4s ease;
+}
+
+input[type="submit"].nav-funds-search-animated:hover {
+  opacity: 0.8;
+}
+
+  .nav-funds {
+    display: none;
+  }
+
+  .nav-funds-item {
+    display: none;
+  }
+
+  /* .nav-funds-logo {
+    width: 180%;
+    margin-left: 2%;
+  }
+
+  .nav-funds-menu {
+    float: right;
+    display: block;
+    right: 20px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 2%;
+  } */
+
+  .funds-home-insights {
+    padding-top: 12%;
+    width: 80%;
+    background-color: white;
+  }
+
+  .funds-home-insights-container{
+    margin-top: 10%;
+  }
+
+  .funds-home-insight-card {
+    display: block;
+    width: 100%;
+
+  }
+  .funds-home-featured-funds {
+    margin-top: 7%;
+  }
+
+  .funds-home-carousel-page {
+    background-position: center;
+
+  }
+
+  .funds-home-carousel-text-box {
+    width: 80%;
+    height: auto;
+    margin-top: 5%;
+  }
+
+  @media (max-width: 768px){
+    .funds-home-carousel-text-box {
+      width: 65%;
+    }
+  }
+
+  @media (max-width: 500px){
+    .funds-home-carousel-text-box {
+      width: 80%;
+    }
+  }
+
+  .funds-home-carousel-text-box-pet-parents {
+    width: 80%;
+  }
+
+  .funds-home-carousel-text-box-esg-green {
+    width: 80%;
+  }
+
+  .funds-home-carousel-header {
+    color: white;
+    font-family: 'Gotham Light';
+    font-size: 11px;
+  }
+
+  .funds-home-insight-card {
+    margin: 10% auto;
+    width: 100%;
+    height: auto;
+    /* max-width: 400px; */
+  }
+
+  .funds-home-insight-image {
+    height: auto;
+    width: 50%;
+  }
+
+  .funds-home-insight-description {
+    font-family: 'Gotham Light';
+    font-size: 100%;
+    letter-spacing: 0.3px;
+    height: auto;
+  }
+
+  .funds-home-insight-card:nth-child(3){
+    margin-right: auto;
+  }
+
+  div#home-ff-container {
+    width: 80%;
+  }
+
+  .ff-card {
+    /* margin-left: 0;
+    margin-right: 0; */
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 900px){
+
+}
+
+.funds-home-carousel-page {
+  position: relative;
+  background-size: cover;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /* border-top: solid 1px #59616c; */
+}
+
+.learn-more {
+  float: right;
+  font-size: 50%;
+  font-family: 'Archivo';
+  color: lightgrey;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.learn-more-button {
+  background-color: #6dcff6;
+  border: none;
+  font-family: 'Archivo';
+  font-size: 100%;
+  padding: 8px 18px;
+  border-radius: 0%;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.reports-menu-item {
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 10;
+  position: static;
+}
+
+.main-navbar {
+  top: 0;
+  margin-bottom: 0 !important;
+  min-height: 33px;
+  width: 100%;
+  background-color: #005B97;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+/* FUNDs NAVBAR Styling */
+
+.nav-container {
+  margin-top: -1px;
+}
+
+#page-not-found-container {
+  font-family: 'Gotham Medium';
+  font-size: 120%;
+  textAlign: center;
+  width: 60%;
+  margin: 20vh auto 30vh auto;
+}
+
+.home-link-404 {
+  color: #00aeef;
+}
+
+.home-link-404:hover {
+  color: #6dcff6;
+}
+
+@media (max-width: 780px){
+  .fund-navbar-web  {
+    display: none;
+  }
+  .fund-navbar-responsive {
+    display: block
+  }
+}
+
+.fund-navbar-open-collapse-container {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+}
+
+.fund-navbar-open-collapse {
+  height: 5px;
+  background-color: #6dcff6;
+}
+
+div#our-company-sites {
+  margin-left: 10px;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 1px;
+  left: 1.5%;
+  position: absolute;
+}
+
+div#cef-meeting-banner {
+  color: #4d545e;
+  font-family: 'Gotham Medium';
+  background-color: #6dcff6;
+  text-align: center;
+  padding: 5px 0;
+  width: 100%;
+  /* display: inline-grid;
+  grid-template-columns: 25% 25% 25% 25%; */
+}
+
+div#cef-meeting-banner a:hover {
+  color: #005b97;
+}
+
+div#ann-meeting-banner {
+  color: white;
+  font-family: 'Gotham Medium';
+  background-color: #00aeef;
+  text-align: center;
+  padding: 5px 0;
+}
+
+div#ann-meeting-banner a:hover {
+  color: #005b97;
+}
+
+div#covid-update-banner {
+  color: white;
+  font-family: 'Gotham Medium';
+  background-color: red;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.nav-funds-search-icon-container {
+  margin-top: 15px;
+}
+
+.nav-funds-search-icon {
+  height: 20px;
+  margin-top: 3px
+}
+
+#wrap {
+  display: inline-block;
+  position: relative;
+  float: right;
+  padding: 0;
+  bottom: 15px;
+  z-index: 10;
+}
+
+.country-container {
+  display: inline-block;
+  width: auto;
+  vertical-align: top;
+  position: relative;
+}
+
+.site-options:hover {
+  color: #6dcff6;
+  cursor: pointer;
+}
+
+input[type="text"].fund-navbar-search-animated {
+  height: 40px;
+  width: 0px;
+  font-size: 20px;
+  display: inline-block;
+  font-family: 'Gotham Light';
+  /* font-family: "Gotham Light"; */
+  letter-spacing: 0.4px;
+  border: none;
+  outline: none;
+  color: #00aeef;
+  padding-right: 30px;
+  position: relative;
+  background: none;
+  right: 0px;
+  z-index: 3;
+  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  cursor: pointer;
+  text-transform: none;
+}
+
+input[type="text"].fund-navbar-search-animated:focus::placeholder {
+  color: #59616c;
+  text-transform: lowercase;
+}
+
+
+input[type="text"].fund-navbar-search-animated:focus {
+  width: 300px;
+  height: 40px;
+  font-size: 15px;
+  z-index: 1;
+  right: 15px;
+  bottom: -5px;
+  background-color: none;
+  padding-top: 10px;
+  cursor: text;
+  border-bottom: 0.5px solid rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+input[type="submit"].fund-navbar-search-animated {
+  height: 55px;
+  width: 35px;
+  display: inline-block;
+  float: right;
+  background: url('https://s3.us-east-2.amazonaws.com/gab-images/search2.svg') center center no-repeat;
+  background-size: 20px;
+  text-indent: -10000px;
+  border: none;
+  position: absolute;
+  /* top: -13px; */
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: opacity .4s ease;
+}
+
+input[type="submit"].fund-navbar-search-animated:hover {
+  opacity: 0.9;
+}
+
+.country-name {
+  display: none;
+  color: black;
+}
+@font-face {
+  font-family: 'Gotham Medium';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Gotham Medium'),
+    url('../../fonts/Gotham-Medium.otf'), format('opentype');
+}
+@font-face {
+  font-family: 'Gotham Narrow Medium';
+  /* font-style: normal;
+  font-weight: normal; */
+  src:
+    local('Gotham Narrow Medium'),
+    url('../../fonts/GothamNarrow-Medium.otf') format('opentype');
+}
+.fund-navbar-open-collapse-text {
+  /* background-color: white; */
+  margin-top: 6px;
+  /* font-family: 'Gotham Light'; */
+  font-family: 'Gotham Light';
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  margin-left: 2%;
+  vertical-align: middle;
+  height: 25px;
+  color: #000;
+  display: block;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.fund-navbar-open-collapse-search {
+  display: inline-block;
+  width: auto;
+  text-align: right;
+  padding-right: 1%;
+}
+
+.collapse-search {
+  -ms-grid-column: 1;
+}
+.account-access-container {
+  width: 200px;
+}
+
+.ie-search-bar {
+  padding-right: 10vw;
+}
+
+.fund-navbar-responsive-container {
+  margin-top: 0px;
+}
+
+.fund-navbar-responsive-item {
+  /* color: #6DCFF6; */
+  color: #fff;
+  margin-left: 45px;
+  /* font-family: 'Gotham Light'; */
+  font-family: 'Gotham Light';
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 3px;
+}
+
+.fund-navbar-responsive-item:hover {
+  color: #00aeef
+}
+
+.fund-navbar {
+  display: none;
+  position: fixed;
+  height: 325px;
+  top: 23%;
+  right: 0%;
+  padding: 10px;
+  border: 2px solid #005b97;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: .3 ease-in-out;
+}
+
+.fund-navbtn{
+  border: 1px solid #005b97;
+  padding: 5px;
+  margin: 1% 0 0 0;
+  width: 125px;
+  height: 30px;
+  background: rgba(255,255,255,.8);
+  cursor: pointer;
+  text-align: center;
+  transition: .35s ease-in-out;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  color: #005b97;
+  font-size: 11px;
+  border-radius: 5px;
+}
+.fund-navbtn:hover{
+  transform: scale(1.02);
+  border: none;
+  border-right: 3px solid #6dcff6;
+  background: #005b97;
+  color: #fff;
+  margin: 2% 0% 0% -9%;
+}
+
+.fund-navbtn:hover::before{
+  transform: scale(1.04);
+  content: "";
+  position: absolute;
+  border: solid 14px transparent;
+  border-right-color: #005b97;
+  left: -23%;
+  top: 0%;
+  z-index: 1;
+}
+.fund-navbar::before{
+  transform: scale(1.04);
+  content: "";
+  position: absolute;
+  border: solid 8px transparent;
+  border-top-color: #a7d2e4;
+  right: 45%;
+  top: 100%;
+  z-index: 1;
+}
+#fundsnav-logo{
+  margin: 1% auto;
+  border: 3px double #005b97;
+  height: 85px;
+  width: 125px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 5px;
+  transition: .3s ease-in-out;
+}
+#funds-hide-btn{
+  height: 55px;
+  width: 90px;
+  top: 61.5%;
+  right: 0%;
+  position: fixed;
+  border-right:1px solid #fff;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgba(0,91,151,1);
+  padding: 10px;
+  text-align:center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#links-btn{
+  height: 15px;
+  width: 20px;
+}
+#fundsnav-logo:hover{
+  transform: scale(1.05);
+}
+#link-btn-text{
+  color: white;
+  padding: 5px;
+  font-size: 10px;
+}
+
+.nav-home {
+  float: right;
+  margin-right: 3%;
+  column-count: 6;
+  font-family: 'Archivo';
+  font-size: 70%;
+  color: #59616c;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-align: center;
+  z-index: 1;
+}
+
+.nav-item {
+  border-top: solid 2px;
+  padding-top: 10%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#mobile-search-link-container {
+  display: none;
+}
+.nav-funds-mini {
+  display: none
+}
+
+/* navbar for gabelli funds */
+
+@media only screen and (max-width: 768px) {
+
+  #mobile-search-link-container {
+    display: inline-block;
+    position: relative;
+  }
+  .mobile-search-link {
+    bottom: 5px;
+    position: absolute;
+  }
+  .fund-navbar-open-collapse-search {
+    display: none;
+  }
+  .nav-funds-mini {
+    display: grid;
+    grid-template-columns: 10% 78% 10%;
+    column-gap: 0%;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid rgba(0,0,0,0.1);
+    background-color: white;
+  }
+
+  input[type="submit"].fund-navbar-search-animated {
+    width: 50px;
+  }
+
+  input[type="text"].fund-navbar-search-animated {
+    right: 10px;
+  }
+
+  input[type="text"].fund-navbar-search-animated:focus {
+    right: 80px;
+    width: 250px;
+  }
+
+  .fund-navbar-open-collapse-search {
+    /* width: 100%; */
+    text-align: right;
+  }
+
+  .nav-funds-logo-mini-container {
+    text-align: center;
+  }
+
+  .nav-funds-logo-mini {
+    margin-top: 2.5%;
+    width: 153.6px;
+    height: 40.95px;
+  }
+
+  .nav-funds-menu-icon {
+    margin-top: 18px;
+    margin-left: 40%;
+    cursor: pointer;
+  }
+
+  .nav-funds {
+    display: none;
+  }
+
+  .nav-funds-item {
+    display: none;
+  }
+  /* .nav-funds-logo {
+    width: 180%;
+    margin-left: 2%;
+  }
+
+  .nav-funds-menu {
+    float: right;
+    display: block;
+    right: 20px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 2%;
+  } */
+}
+
+
+
+/*  ACCOUNT ACCESS BUTTONS */
+.client-divs {
+  vertical-align: top;
+  display: inline-block;
+  /* position: absolute; */
+  height: 24px !important;
+  width: auto;
+  padding-right: 4.5%;
+  font-size: 11px;
+  right: 1px;
+  /* border-left: 0.5px solid #e0e2e8; */
+}
+
+@media only screen and (max-width: 500px){
+  .main-navbar {
+    margin-bottom: 5px !important;
+    border-bottom: none !important;
+  }
+  div.country-container {
+    height: auto;
+    /* display: inline-block; */
+    display: none;
+  }
+  .fund-navbar-open-collapse-search form {
+    position: absolute;
+    right: -135px;
+    top: 40px;
+    z-index: 20;
+    background-color: white;
+  }
+  .fund-navbar-open-collapse-text {
+    margin-left: 0;
+  }
+
+ input[type="text"].fund-navbar-search-animated {
+   right: 0px;
+ }
+
+ input[type="submit"].fund-navbar-search-animated {
+   width: 25px;
+ }
+
+  input[type="text"].fund-navbar-search-animated:focus {
+    width: calc(100vw - 120px);
+    right: 15px;
+  }
+
+  .country-name {
+    display: none;
+  }
+
+  .existing-client,
+  .open-account {
+    font-size: 8px;
+  }
+}
+
+
+
+.client-divs div {
+  display: inline-block;
+  /* font-size: 10px; */
+}
+
+
+.lock {
+  padding-bottom: 2px;
+}
+.lock:hover {
+  display: none;
+}
+
+.login-div {
+  vertical-align: top;
+  position: relative;
+  height: 24px !important;
+  display: inline-block;
+  margin-left: 1%;
+}
+div.existing-client{
+  background-color: #005b97;
+  font-family: 'Gotham Light';
+  letter-spacing: 0.8px;
+  font-weight: bold;
+  width: auto;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #005B97;
+  border-radius: 3px;
+  /* float: left; */
+  padding: 0 4%;
+}
+.existing-client:hover {
+  background-color: #fff;
+  color: #005b97;
+}
+div.gamco-login{
+  background-color: #005b97;
+  font-family: 'Gotham Light';
+  letter-spacing: 0.8px;
+  font-weight: bold;
+  width: auto;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #005B97;
+  border-radius: 3px;
+  float: right;
+  padding: 0 4%;
+}
+.gamco-login:hover {
+  background-color: #fff;
+  color: #005b97;
+}
+
+div.open-account {
+  background-color: #fff;
+  font-family: 'Gotham Light';
+  letter-spacing: 0.8px;
+  font-weight: 900;
+  width: auto;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #005b97;
+  border: 1px solid #00aeef;
+  border-radius: 3px;
+  /* float: left; */
+  margin-left: 1%;
+  padding: 0 4%;
+}
+.open-account:hover {
+  background-color: #00aeef;
+  color: #fff;
+}
+.open-account:hover a {
+  color: #fff;
+}
+
+@media only screen and (max-width: 450px) {
+  div#our-company-sites {
+    margin-left: 1%;
+    font-size: 12px;
+  }
+
+  .fund-navbar-responsive-item {
+    font-size: 12px;
+  }
+
+  .log-in {
+    padding-top: 4px;
+    /* padding-left: 32px; */
+    font-size: 8px;
+    color: black;
+    display: none;
+  }
+
+  .log-in-gamco {
+    display: none;
+  }
+
+  .log-in-mobile {
+    padding-top: 4px;
+    /* padding-left: 32px; */
+    font-size: 8px;
+    color: black;
+    display: inline-block;
+  }
+
+  .log-in-gamco-mobile {
+    padding-top: 4px;
+    /* padding-left: 32px; */
+    font-size: 8px;
+    color: black;
+    display: inline-block;
+    float: right;
+  }
+
+  div.existing-client, div.gamco-login, div.open-account {
+    border-radius: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 8px;
+    letter-spacing: 0.2px
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  div.country-container {
+    display: none;
+  }
+
+}
+/* END ACCOUNT ACCESS BUTTONS */

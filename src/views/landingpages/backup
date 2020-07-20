@@ -1,0 +1,24 @@
+const EsgLanding = () => {
+  return (
+    <div>
+
+    <head>
+    <link rel="stylesheet" type="text/css" href="esglanding.css"></link>
+ </head>
+ <div class="carousel-container"></div>
+    <img className="img-landing"src="https://p1.pxfuel.com/preview/262/859/676/plant-sow-grow-growing-trays-seedling-gardening-royalty-free-thumbnail.jpg"></img>
+    <h2 className='h2'>Human Capital. Water Stress. Business Ethics.</h2>
+    <h1 className='h1'>The Gabelli ESG Fund</h1>
+    <div id="bar"></div>
+    <h1 className='h1'>Our Committment to Ethical Investing</h1>
+    <h2 className='h2'>The Gabelli ESG Fund uses our firm's expertise to evaluate the social responsibility of various asset investments. Let us use our holistic ESG (Environment, Social, Governance) analysis process to identify companies trading below their true value were they made public. Companies making over 5% of their revenue from alcohol, tobacco, defense, fossil fuels and gaming are automatically excluded. Make returns on your portfolio while also helping to make a difference in the world with the Gabelli ESG Fund.</h2>
+    <h1 className='h1'>Socially Responsible Investments</h1>
+    <h2 className='h2'>80% of the fund's investments must meet our firm's social responsibility guidelines.</h2>
+    <img className="img-landing" src="https://gab-image-links.s3.us-east-2.amazonaws.com/esg1a.png"></img>
+    <h1 className='h1'>Feel Good Returns.</h1>
+    <Suspense fallback=<div><ESGCarousel /></div>>
+
+    </Suspense>
+    </div>
+    )
+}

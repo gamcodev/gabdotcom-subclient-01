@@ -1,3 +1,32 @@
+.w3-bar-item {
+  color: blue;
+  height: 2em;
+  width: 100%;
+  display: block;
+  image-align: center;
+}
+
+.img-landing {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 10px;
+
+}
+
+
+
+.h1 {
+  background-color: darkblue;
+  text-align: center;
+  padding-bottom: 10px;
+  text-align: center;
+}
+h2.h2 {
+  background-color: #00FFFF;
+  text-align: center;
+}
 .reports-menu-item {
   background-color: rgba(255, 255, 255, 0);
   z-index: 10;
@@ -206,7 +235,7 @@ input[type="submit"].fund-navbar-search-animated:hover {
   font-weight: normal;
   src:
     local('Gotham Medium'),
-    url('../../assets/fonts/Gotham-Medium.otf') format('opentype');
+    url('../../fonts/Gotham-Medium.otf'), format('opentype');
 }
 @font-face {
   font-family: 'Gotham Narrow Medium';
@@ -214,7 +243,7 @@ input[type="submit"].fund-navbar-search-animated:hover {
   font-weight: normal; */
   src:
     local('Gotham Narrow Medium'),
-    url('../../assets/fonts/GothamNarrow-Medium.otf') format('opentype');
+    url('../../fonts/GothamNarrow-Medium.otf') format('opentype');
 }
 .fund-navbar-open-collapse-text {
   /* background-color: white; */
