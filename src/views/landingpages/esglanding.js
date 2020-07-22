@@ -56,8 +56,7 @@ class ESGHome extends Component  {
 
   render(){
     return(
-      <div>
-
+      <div class= "fade-in" style={{backgroundImage: "url()", backgroundRepeat: "no-repeat", backgroundSize: "cover", imageAlign: "center", zIndex: "5",animation: "fadeIn ease 10s"}}>
         <Suspense fallback={<Spinner size={100} className="funds-spinner"/>}>
           <header>
           </header>
@@ -69,10 +68,9 @@ class ESGHome extends Component  {
         </Suspense>
 
             <head>
-            <link rel="stylesheet" type="text/css" href="mystyle.css"></link>
+            <link rel="stylesheet" href="/css/mystyle.css"></link>
 
          </head>
-
          <div className="nav-container" style={{ backgroundColor: 'white' }}>
            <CheeseburgerMenu
              isOpen={this.state.menuOpen}
@@ -193,7 +191,7 @@ class ESGHome extends Component  {
            }
          </div>
          <Suspense fallback={<Spinner size={100} className="funds-spinner"/>}><ESGCarousel /></Suspense>
-
+         <h2 class="fadeIn">Test</h2>
          <div class="carousel-container" style={{textAlign:"center"}}></div>
             <h2 className='h2' style={{textAlign:"left", color: '#00ffff', marginTop: "7px", fontFamily: "Gothic Light", fontSize: "40px"}}>Human Capital. Water Stress. Business Ethics.</h2>
             <h1 className='h1' style={{textAlign:"left", color: '#00008b', marginTop: "7px", fontFamily: "Gothic Medium", fontSize: "50px"}}>The Gabelli ESG Fund</h1>

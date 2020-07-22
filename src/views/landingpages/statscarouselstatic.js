@@ -70,7 +70,7 @@ class StatsCarousel extends Component {
 
           :
           <Carousel.Item key={key}>
-            <div className='funds-home-carousel-page' style={{'backgroundImage': `url('${carouselItem.imagePath}')`, width: '50%', borderRadius: '15%'  }}>
+            <div className='funds-home-carousel-page' style={{'backgroundImage': `url('${carouselItem.imagePath}')`, width: '50%', borderRadius: '50px', position: "relative", left: "0px", right: "0px" }}>
 
             </div>
           </Carousel.Item>

@@ -77,7 +77,7 @@ class ESGCarousel extends Component {
 
           :
           <Carousel.Item key={key}>
-            <div className='funds-home-carousel-page' style={{'backgroundImage': `url('${carouselItem.imagePath}')`, width: '50%'}}>
+            <div className='funds-home-carousel-page' style={{'backgroundImage': `url('${carouselItem.imagePath}')`, width: '50%', borderRadius: "50px"}}>
 
             </div>
           </Carousel.Item>
