@@ -6,8 +6,17 @@
   display: block;
   image-align: center;
 }
-h2 {
-  display: none;
+.h1 {
+  color: darkblue;
+  text-align: center;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.h2 {
+  color: #00FFFF;
+  text-align: center;
+  position: static;
 }
 .img-landing {
   width: 100%;
@@ -25,66 +34,6 @@ h2 {
   -o-animation: fadeIn ease 10s;
   -ms-animation: fadeIn ease 10s;
 }
-@keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-}
-
-.fade-in {
-    width:200px;
-    height: 200px;
-    background: red;
-    -webkit-animation: fadeinout 4s linear forwards;
-    animation: fadeinout 4s linear forwards;
-    opacity: 0;
-}
-
-@-webkit-keyframes fadeinout {
-  50% { opacity: 1; }
-}
-
-@keyframes fadeinout {
-  50% { opacity: 1; }
-}
 
 .h1 {
   color: darkblue;
@@ -96,6 +45,7 @@ h2 {
 .h2 {
   color: #00FFFF;
   text-align: center;
+  position: static;
 }
 
 .nav-funds-container {
@@ -280,13 +230,14 @@ margin-left: 2%; */
 
 .funds-home-carousel-page {
   position: relative;
-  max-height: 250px;
-  max-width: 250px;
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
   display: block;
   cursor: pointer;
+  margin-top: auto;
+  margin-bottom: left;
+
 
   /* border-top: solid 1px #59616c; */
 }
@@ -1136,7 +1087,7 @@ input[type="submit"].fund-navbar-search-animated:hover {
   font-weight: normal;
   src:
     local('Gotham Medium'),
-    url('../../fonts/Gotham-Medium.otf'), format('opentype');
+    url('../../assets/fonts/Gotham-Medium.otf'), format('opentype');
 }
 @font-face {
   font-family: 'Gotham Narrow Medium';
@@ -1144,7 +1095,7 @@ input[type="submit"].fund-navbar-search-animated:hover {
   font-weight: normal; */
   src:
     local('Gotham Narrow Medium'),
-    url('../../fonts/GothamNarrow-Medium.otf') format('opentype');
+    url('../../assets/fonts/GothamNarrow-Medium.otf') format('opentype');
 }
 .fund-navbar-open-collapse-text {
   /* background-color: white; */

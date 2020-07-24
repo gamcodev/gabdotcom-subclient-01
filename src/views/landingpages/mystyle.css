@@ -235,7 +235,7 @@ input[type="submit"].fund-navbar-search-animated:hover {
   font-weight: normal;
   src:
     local('Gotham Medium'),
-    url('../../fonts/Gotham-Medium.otf'), format('opentype');
+    url('../assets/fonts/Gotham-Medium.otf'), format('opentype');
 }
 @font-face {
   font-family: 'Gotham Narrow Medium';

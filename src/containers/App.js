@@ -10,8 +10,8 @@ import Events from '../views/Events'
 import Robo from '../views/RoboFeature'
 import EsgLanding from '../views/landingpages/esglanding'
 import GamcoInvestorsHome from '../views/GamcoInvestorsHome'
-
 import './App.css';
+import '../views/landingpages/esglanding.css'
 
 class App extends Component {
   state = {

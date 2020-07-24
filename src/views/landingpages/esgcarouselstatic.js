@@ -7,7 +7,7 @@ import { Icon } from '@blueprintjs/core';
 const carouselItems = [
   {
     key: 1,
-    imagePath: "https://p1.pxfuel.com/preview/262/859/676/plant-sow-grow-growing-trays-seedling-gardening-royalty-free-thumbnail.jpg",
+    imagePath: "https://cdn.pixabay.com/photo/2019/03/05/12/52/plant-4036130_960_720.jpg",
     link: "",
     header: "",
     caption: "",
@@ -77,7 +77,7 @@ class ESGCarousel extends Component {
 
           :
           <Carousel.Item key={key}>
-            <div className='funds-home-carousel-page' style={{'backgroundImage': `url('${carouselItem.imagePath}')`, width: '50%', borderRadius: "50px"}}>
+            <div className='funds-home-carousel-page' style={{'backgroundImage': `url('${carouselItem.imagePath}')`, width: '66%', borderRadius: "50px"}}>
 
             </div>
           </Carousel.Item>

@@ -197,12 +197,12 @@ class ESGHome extends Component  {
             <h1 className='h1' style={{textAlign:"left", color: '#00008b', marginTop: "7px", fontFamily: "Gothic Medium", fontSize: "50px"}}>The Gabelli ESG Fund</h1>
             <div id="bar" style={{backgroundColor: "blue"}}></div>
             <h1 className='h1' style={{textAlign:"left", color: '#00008b', marginTop: "7px", fontFamily: "Gothic Medium", fontSize: "40px"}}>Our Committment to Ethical Investing</h1>
-            <h2 className='h2' style={{textAlign:"left", color: '#00ffff', marginTop: "7px", fontFamily: "Gothic Light", fontSize: "30px"}}>The Gabelli ESG Fund uses our firm's expertise to evaluate the social responsibility of various asset investments. Let us use our holistic ESG (Environment, Social, Governance) analysis process to identify companies trading below their true value were they made public. Companies making over 5% of their revenue from alcohol, tobacco, defense, fossil fuels and gaming are automatically excluded. Make returns on your portfolio while also helping to make a difference in the world with the Gabelli ESG Fund.</h2>
+            <h2 className='h2' style={{textAlign:"left", color: '#00ffff', marginTop: "7px", fontFamily: "Gothic Light", fontSize: "30px", zIndex: 5}}>The Gabelli ESG Fund uses our firm's expertise to evaluate the social responsibility of various asset investments. Let us use our holistic ESG (Environment, Social, Governance) analysis process to identify companies trading below their true value were they made public. Companies making over 5% of their revenue from alcohol, tobacco, defense, fossil fuels and gaming are automatically excluded. Make returns on your portfolio while also helping to make a difference in the world with the Gabelli ESG Fund.</h2>
             <div class="w3-bar-item"></div>
             <h1 className='h1' style={{textAlign:"left", color: '#00008b', marginTop: "7px", fontFamily: "Gothic Medium", fontSize: "40px"}}>Socially Responsible Investments</h1>
             <Suspense fallback={<Spinner size={100} className="funds-spinner"/>}><StatsCarousel /></Suspense>
-            <h2 className='h2' style={{textAlign:"left", color: '#00ffff', marginTop: "7px", fontFamily: "Gothic Light", fontSize: "30px"}}>80% of the fund's investments must meet our firm's social responsibility guidelines.</h2>
-            <h1 className='h1' style={{textAlign:"left", color: '#00008b', marginTop: "7px", fontFamily: "Gothic Medium", fontSize: "50px"}}>Feel Good Returns.</h1>
+            <h2 className='h2' style={{textAlign:"left", color: '#00ffff', marginTop: "7px", fontFamily: "Gothic Light", fontSize: "30px", zIndex: 5}}>80% of the fund's investments must meet our firm's social responsibility guidelines.</h2>
+            <h1 className='h1' style={{textAlign:"left", color: '#00008b', marginTop: "7px", fontFamily: "Gothic Medium", fontSize: "50px", zIndex: 5}}>Feel Good Returns.</h1>
             <Footer />
             )
         }
